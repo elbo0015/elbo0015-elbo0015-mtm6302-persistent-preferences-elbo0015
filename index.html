@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persistent Preferences</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-light"> <div class="container">
+        <header>
+            <h1>User Preferences</h1>
+            <p>Your settings will be saved automatically.</p>
+        </header>
+
+        <section class="preferences-panel">
+            <div class="control">
+                <label for="theme-select">Page Theme</label>
+                <select id="theme-select">
+                    <option value="theme-light">Light Mode</option>
+                    <option value="theme-dark">Dark Mode</option>
+                    <option value="theme-ocean">Ocean Breeze</option>
+                </select>
+            </div>
+
+            <div class="control">
+                <label for="style-select">List Appearance</label>
+                <select id="style-select">
+                    <option value="list-default">Standard List</option>
+                    <option value="list-bordered">Bordered Boxes</option>
+                    <option value="list-cards">Floating Cards</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="list-container">
+            <ul id="dynamic-list" class="list-default">
+                </ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
