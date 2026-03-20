@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persistent Preferences</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Preferences</h1>
+        
+        <div class="controls">
+            <label for="theme-select">Choose Theme:</label>
+            <select id="theme-select">
+                <option value="light-theme">Light Mode</option>
+                <option value="dark-theme">Dark Mode</option>
+                <option value="ocean-theme">Ocean Breeze</option>
+            </select>
+
+            <label for="list-select">List Style:</label>
+            <select id="list-select">
+                <option value="standard-list">Standard List</option>
+                <option value="grid-list">Grid Cards</option>
+                <option value="compact-list">Compact View</option>
+            </select>
+        </div>
+
+        <ul id="display-list" class="standard-list">
+            <li>Item 1: Project Research</li>
+            <li>Item 2: HTML Structure</li>
+            <li>Item 3: CSS Styling</li>
+            <li>Item 4: JavaScript Logic</li>
+            <li>Item 5: LocalStorage Persistence</li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
